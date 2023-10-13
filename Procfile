@@ -1,0 +1,1 @@
+web: gunicorn dumbanengue.wsgi --log-file -

@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dumbanengue - Mozambican Food Price Predictor</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+
+    <h1>DUMBANENGUE</h1>
+
+    <a href="https://github.com/HercoZauZau/Dumbanengue" target="_blank">Mozambican Food Price Predictor</a>
+
+
+    <form action="" method="post">
+      {% csrf_token %}
+      <div>
+        <label for="year">Year</label>
+        <input type="number" id="year" name="year" required />
+
+        <div class="feature">
+          <label for="month">Month</label>
+          <select class="" id="month" name="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+
+        <div class="feature">
+          <label for="province">Province</label>
+          <select class="" id="province" name="province">
+            <option value="6">Maputo City</option>
+            <option value="5">Maputo Province</option>
+            <option value="2">Gaza</option>
+            <option value="3">Inhambane</option>
+            <option value="4">Manica</option>
+            <option value="9">Sofala</option>
+            <option value="11">Zambezia</option>
+            <option value="10">Tete</option>
+            <option value="7">Nampula</option>
+            <option value="8">Niassa</option>
+            <option value="1">Cabo Delgado</option>
+          </select>
+        </div>
+
+        <div class="feature">
+          <label for="category">Category</label>
+          <select class="" id="category" name="category">
+            <option value="1">Cereals and Tubers</option>
+            <option value="2">Meat, Fish and Eggs</option>
+            <option value="3">Miscellaneous Food</option>
+            <option value="4">Oil and Fats</option>
+            <option value="5">Pulses and Nuts</option>
+            <option value="6">Vegetables and Fruits</option>
+          </select>
+        </div>
+
+        <div class="feature">
+          <label for="product">Product</label>
+          <select class="" id="product" name="product">
+            <option class="c1" value="7">Cassava (dry) - kg</option>
+            <option class="c5" value="1">Beans (butter) - kg</option>
+            <option class="c5" value="2">Beans (catarino) - kg</option>
+            <option class="c5" value="3">Beans (dry) - kg</option>
+            <option class="c5" value="4">Beans (magnum) - kg</option>
+            <option class="c6" value="5">Cabbage - kg</option>
+            <option class="c6" value="6">Carrots - kg</option>
+            <option class="c1" value="8">Cassava flour - kg</option>
+            <option class="c6" value="9">Cassava leaves - kg</option>
+            <option class="c6" value="10">Coconut - unit</option>
+            <option class="c5" value="11">Cowpeas - kg</option>
+            <option class="c2" value="12">Eggs - 30 pcs</option>
+            <option class="c2" value="13">Fish - 500 g</option>
+            <option class="c6" value="14">Garlic - kg</option>
+            <option class="c5" value="15">Groundnuts (Mix) - kg</option>
+            <option class="c5" value="16">
+              Groundnuts(large,shelled) - kg
+            </option>
+            <option class="c5" value="17">
+              Groundnuts(small,shelled) - kg
+            </option>
+            <option class="c5" value="18">Groundnuts - kg</option>
+            <option class="c6" value="19">Kale - kg</option>
+            <option class="c1" value="20">Maize (white) - kg</option>
+            <option class="c1" value="21">
+              Maize meal(white,first grade) - kg
+            </option>
+            <option class="c1" value="22">
+              Maize meal(white,with bran) - kg
+            </option>
+            <option class="c1" value="23">
+              Maize meal(white,without bran) - kg
+            </option>
+            <option class="c1" value="24">Maize meal - 25 kg</option>
+            <option class="c4" value="25">Oil (vegetable) - 5L</option>
+            <option class="c4" value="26">
+              Oil(vegetable,imported) - 1L
+            </option>
+            <option class="c4" value="27">Oil(vegetable,local) - 1L</option>
+            <option class="c6" value="28">Onions - kg</option>
+            <option class="c1" value="29">Potatoes - kg</option>
+            <option class="c1" value="30">Rice (imported) - kg</option>
+            <option class="c1" value="31">Rice (local) - kg</option>
+            <option class="c1" value="32">Rice - 25 kg</option>
+            <option class="c1" value="33">Rice - kg</option>
+            <option class="c3" value="34">Salt (iodised) - kg</option>
+            <option class="c3" value="35">Sugar(brown,imported) - kg</option>
+            <option class="c3" value="36">Sugar(brown,local) - kg</option>
+            <option class="c3" value="37">Sugar - kg</option>
+            <option class="c1" value="38">Sweet potatoes - kg</option>
+            <option class="c6" value="39">Tomatoes - kg</option>
+            <option class="c1" value="40">Wheat flour (local) - kg</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <h2 class="output"></h2>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

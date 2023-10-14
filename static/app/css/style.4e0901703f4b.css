@@ -1,0 +1,106 @@
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("banner.1a30599996ef.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 15px auto 0 auto;
+  font-family: "Noto Sans Bengali", sans-serif;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+a {
+  color: #fff;
+  font-style: italic;
+}
+
+a:hover{
+  color: #ffffff80;
+
+}
+
+.output {
+  font-family: "Noto Serif", serif;
+  margin: 0 auto;
+  font-size: 1.7em;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+main {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  height: 620px;
+  padding: 20px;
+  margin: auto;
+  color: #fff;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+    -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+form {
+  text-align: left;
+  margin: 25px auto;
+  width: fit-content;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding-left: 10px;
+  background: none;
+  width: 100%;
+  height: 25px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+input {
+  width: calc(100% - 10px);
+}
+
+option {
+  color: black;
+}
+
+button {
+  margin: 20px auto -5px auto;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffffff80;
+}
+
+.feature {
+  margin: 25px auto;
+}
